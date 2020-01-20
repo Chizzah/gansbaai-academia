@@ -42,7 +42,7 @@
       </section>
     <section class="mt-24 py-2 mx-4 text-gray-100 text-xs text-center border-solid lg:order-2">
       <p class="mb-4">JAMstack Website by <a href="http://chaddwebdesign.co.za" target="_blank"><span class="font-semibold hover:text-green-400">Chadd Web Design</span></a></p>
-      <p class="mb-4 lg:mb-8">Copyright &copy; {{ new Date().getFullYear() }} AfricanQueen. All rights reserved.</p>
+      <p class="mb-4 lg:mb-8">Copyright &copy; {{ new Date().getFullYear() }} Gansbaai Academia. All rights reserved.</p>
     </section>
   </footer>
 </template>
@@ -52,16 +52,14 @@ export default {
   data() {
     return {
       navItems: [
-        { title:'Home', route:'/home' },
+        { title:'Home', route:'/' },
         { title:'About', route:'/about' },
-        { title:'Admissions', route:'/admissions' },
         { title:'News', route:'/news' },
         { title:'Calendar', route:'/calendar' },
         { title:'Privacy', route:'/privacypolicy' },
       ],
       quickLinksItems: [
         { title:'Pledges', route:'/pledges' },
-        { title:'Policies', route:'/policies' },
         { title:'Extracurricular', route:'/extracurricular' },
         { title:'Grade Shark', route:'/gradeshark' },
         { title:'Sponsorships', route:'/sponsorships' }

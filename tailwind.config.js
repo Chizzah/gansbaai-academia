@@ -17,9 +17,6 @@ module.exports = {
       '4': '4px',
     },
     extend: {
-      colors: {
-        rosegold: '#b7756e',
-      },
       spacing: {
         '72': '18rem',
         '96': '24rem',

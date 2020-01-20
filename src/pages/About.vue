@@ -1,7 +1,74 @@
 <template>
   <Layout>
-    <h1>About us</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <section class="text-gray-900 lg:text-xl">
+      <section id="heroSection">
+        <div class="relative bg-black">
+          <g-image class="w-full h-full opacity-50" src="../../static/img/about-hero-img.webp" alt="Four dice on Gansbaai Academia classroom desk spelling the word teach" height="480" />
+          <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start text-gray-100 lg:mt-40">
+            <div class="mt-12 py-10 px-24 bg-red-900 opacity-75 lg:py-20 lg:px-72">
+            </div>
+          </div>
+          <div class="mt-6 ml-4 absolute top-0 left-0 h-full flex flex-col justify-center items-start text-gray-100 lg:mt-40 lg:ml-8">
+            <h1 class="mb-2 text-xs font-semibold uppercase lg:mt-12 lg:text-4xl">Gansbaai Academia</h1>
+            <p class="text-xxs lg:text-xl">"Start where you are. Use what you have. <br class="lg:hidden"> Do what you can." <br> <strong>- Arthur Ashe</strong></p>
+          </div>
+        </div>
+      </section>
+      <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
+        <div>
+          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">School</span></h2>
+          <p>Gansbaai Academia is a no fees, multi-cultural school situated in <br class="hidden lg:block"> Gansbaai. The school officially opened its doors on 22 February, 2010 <br class="hidden lg:block"> on the insistence of the local community who reasoned that the other <br class="hidden lg:block"> high schools in the area were too remote. It serves all communities and <br class="hidden lg:block"> most of the school’s current complement of 725 learners originate from <br class="hidden lg:block"> the three main population groups (black, coloured and white) in Gansbaai <br class="hidden lg:block"> and Stanford and their surrounding areas.</p>
+        </div>
+      </section>
+      <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
+        <div>
+          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">History</span></h2>
+          <p class="mb-2 lg:mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos exercitationem <br class="hidden lg:block"> quae eum, asperiores unde fugit, minima explicabo saepe dicta, id numquam ea porro <br class="hidden lg:block"> nihil sed sunt labore aperiam. Necessitatibus eos consequatur excepturi est fuga cumque <br class="hidden lg:block"> veniam quidem vitae veritatis voluptatibus repellendus itaque vel neque saepe minus, non <br class="hidden lg:block"> repudiandae quia. Vitae?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem voluptates <br class="hidden lg:block"> ab quidem optio odio dolor totam obcaecati facere velit quibusdam saepe odit exercitationem <br class="hidden lg:block"> consectetur cum rem, pariatur at distinctio repudiandae praesentium accusantium minima <br class="hidden lg:block"> excepturi. Fugiat vel commodi repellat, minus earum sunt voluptatem delectus sit sapiente <br class="hidden lg:block"> vero, nam pariatur eius.</p>
+        </div>
+      </section>
+      <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
+        <div>
+          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">Curriculum</span></h2>
+          <p>The school is a parallel medium school teaching home languages of Xhosa or <br class="hidden lg:block"> Afrikaans. All other subjects are taught in English or Afrikaans. Thus English speaking <br class="hidden lg:block"> learners can have all their subjects taught in English, but have to choose between <br class="hidden lg:block"> Xhosa or Afrikaans as their mother language.</p>
+          <button @click="isOpen1 = !isOpen1" type="button" class="w-128 mt-8 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:mt-16">
+            <h2 class="text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Core Subjects</h2>
+            <div class="bg-red-900 rounded-r-lg">
+              <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+            </div>
+          </button>
+          <div :class="isOpen1 ? 'block' : 'hidden'" class="flex flex-col items-start justify-start text-sm font-semibold uppercase lg:mt-8">
+            <ul class="list-disc lg:ml-8">
+              <li class="lg:mb-2">Home Language Xhosa or Afrikaans</li>
+              <li class="lg:mb-2">Second Language English</li>
+              <li class="lg:mb-2">Mathematics or Mathematics Literacy</li>
+              <li>Life orientation</li>
+            </ul>
+          </div>
+          <button @click="isOpen2 = !isOpen2" type="button" class="w-128 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:mt-8">
+            <h2 class="text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Other Subjects</h2>
+            <div class="bg-red-900 rounded-r-lg">
+              <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+            </div>
+          </button>
+          <div :class="isOpen2 ? 'block' : 'hidden'" class="flex flex-col items-start justify-start w-full text-sm font-semibold uppercase lg:mt-8">
+            <ul class="list-disc lg:ml-8">
+              <li class="lg:mb-2">Gr 8 – 9: Social Sciences, Natural Sciences, Arts <br class="hidden lg:block"> and Culture, Technology, Economic Management <br class="hidden lg:block"> Sciences</li>
+              <li>Gr 10-12 A choice of 3 subjects from Accounting, <br class="hidden lg:block"> Business Studies, Computer Applications Technology, <br class="hidden lg:block"> Geography, Hospitality Studies, Life Sciences, Physical <br class="hidden lg:block"> Sciences or Tourism</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
+        <div>
+          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">Mascot</span></h2>
+          <p class="mb-2 lg:mb-4">We have adopted the shark as our mascot and our sports teams are <br class="hidden lg:block"> named the Sharkies. This is because Gansbaai, the town where we are <br class="hidden lg:block"> situated, is home to the big two of the oceans, the great white shark and <br class="hidden lg:block"> the southern right whale and offers unquestionably the world’s best <br class="hidden lg:block"> white-shark diving</p>
+        </div>
+        <div>
+          <g-image class="mt-8 rounded-lg lg:mt-16 lg:mr-64 lg:rounded" src="../../static/img/about-mascot.webp" alt="Students of Gansbaai Academia celebrating graduation." />
+        </div>
+      </section>
+    </section>
   </Layout>
 </template>
 
@@ -9,6 +76,12 @@
 export default {
   metaInfo: {
     title: 'About us'
+  },
+  data() {
+    return {
+      isOpen1: false,
+      isOpen2: false,
+    }
   }
 }
 </script>

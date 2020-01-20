@@ -3,7 +3,7 @@
     <nav class="flex justify-around items-center lg:text-xl">
       <section class="uppercase">
         <g-link to="/"><h5 class="text-red-900 text-xl font-bold lg:text-3xl">Gansbaai Academia</h5>
-        <p class="text-yellow-600 text-sm font-semibold">High School</p></g-link>
+        <p class="text-yellow-600 text-sm font-semibold lg:text-lg">High School</p></g-link>
       </section>
       <section class="hidden font-bold text-2xl lg:flex">
         <ul v-for="menuItem in menuItems" :key="menuItem.title">
@@ -35,9 +35,8 @@ export default {
   data() {
     return {
       menuItems: [
-        { title:'Home', route:'/home' },
+        { title:'Home', route:'/' },
         { title:'About', route:'/about' },
-        { title:'Admissions', route:'/admissions' },
         { title:'News', route:'/news' },
         { title:'Calendar', route:'/calendar' },
         { title:'Contact', route:'/contact' }
