@@ -66,7 +66,7 @@ export default {
       ],
       contactItems: [
         { title:'Sign Up', route:'/newsletter' },
-        { title:'Contact Us', route:'/contact' }
+        { title:'Contact Us', route:'/gansbaai-academia-contact' }
       ],
       isOpen: false,
     }

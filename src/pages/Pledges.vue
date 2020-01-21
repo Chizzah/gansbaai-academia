@@ -16,47 +16,47 @@
       </section>
       <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
         <div>
-          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Educator's <span class="text-red-900">Pledge</span></h2>
+          <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">Educator's <span class="text-red-900">Pledge</span></h2>
           <h3 class="mb-2 font-semibold text-lg lg:mb-4 lg:text-2xl">Educators at Gansbaai Academia have a special pledge:</h3>
           <p>We who work in Gansbaai Academia hold the view that all pupils can succeed and <br class="hidden lg:block"> we are working to see that it happens.</p>
           <h4 class="mt-4 mb-2 font-semibold lg:mt-8 lg:mb-4">As an educator I will also:</h4>
-            <ul class="list-disc lg:ml-8">
-              <li class="lg:mb-2">teach, to advance the education and the development of learners as individuals;</li>
-              <li class="lg:mb-2">respect the dignity and rights of all persons without prejudice;</li>
-              <li class="lg:mb-2">develop loyalty and respect for the profession;</li>
-              <li class="lg:mb-2">be punctual, enthusiastic, well prepared for lessons, and of sober mind and body;</li>
-              <li class="lg:mb-2">improve my own knowledge and skills base to be more effective;</li>
-              <li class="lg:mb-2">maintain good communication between teachers and students, among teachers <br class="hidden lg:block"> themselves and between teachers and parents;</li>
-              <li class="lg:mb-2">provide regular information to parents on their children’s progress;</li>
-              <li class="lg:mb-2">eliminate unprofessional behaviour such as teacher-pupil relationships, drunkenness, <br class="hidden lg:block"> drug use, assault, sexual harassment and others;</li>
-              <li class="lg:mb-2">make myself available to provide extramural activities.</li>
+            <ul class="ml-4 list-disc lg:ml-8">
+              <li class="mb-1 lg:mb-2">teach, to advance the education and the development of learners as individuals;</li>
+              <li class="mb-1 lg:mb-2">respect the dignity and rights of all persons without prejudice;</li>
+              <li class="mb-1 lg:mb-2">develop loyalty and respect for the profession;</li>
+              <li class="mb-1 lg:mb-2">be punctual, enthusiastic, well prepared for lessons, and of sober mind and body;</li>
+              <li class="mb-1 lg:mb-2">improve my own knowledge and skills base to be more effective;</li>
+              <li class="mb-1 lg:mb-2">maintain good communication between teachers and students, among teachers <br class="hidden lg:block"> themselves and between teachers and parents;</li>
+              <li class="mb-1 lg:mb-2">provide regular information to parents on their children’s progress;</li>
+              <li class="mb-1 lg:mb-2">eliminate unprofessional behaviour such as teacher-pupil relationships, drunkenness, <br class="hidden lg:block"> drug use, assault, sexual harassment and others;</li>
+              <li class="mb-1 lg:mb-2">make myself available to provide extramural activities.</li>
             </ul>
         </div>
       </section>
       <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
         <div>
-          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Learner's <span class="text-red-900">Pledge</span></h2>
+          <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">Learner's <span class="text-red-900">Pledge</span></h2>
           <h3 class="mb-2 font-semibold text-lg lg:mb-4 lg:text-2xl">As a responsible learner of Gansbaai Academia, I will:</h3>
-          <ul class="list-disc lg:ml-8">
-            <li class="lg:mb-2">teach, to advance the education and the development of learners as individuals;</li>
-            <li class="lg:mb-2">accept that the main reason for being in school is to learn and develop academically, <br class="hidden lg:block"> socially and culturally;</li>
-            <li class="lg:mb-2">adhere to school rules;</li>
-            <li class="lg:mb-2">respect the legitimacy and authority of teachers;</li>
-            <li class="lg:mb-2">participate in Learner Representative Councils (LRCs) to safeguard my interests;</li>
-            <li class="lg:mb-2">show respect to other learners and not to discriminate;</li>
-            <li class="lg:mb-2">avoid anti-social behaviour like theft, vandalism, assault, sexual harassment, alcohol <br class="hidden lg:block"> and drug use, and other activities that disrupt the learning process.</li>
+          <ul class="ml-4 list-disc lg:ml-8">
+            <li class="mb-1 lg:mb-2">teach, to advance the education and the development of learners as individuals;</li>
+            <li class="mb-1 lg:mb-2">accept that the main reason for being in school is to learn and develop academically, <br class="hidden lg:block"> socially and culturally;</li>
+            <li class="mb-1 lg:mb-2">adhere to school rules;</li>
+            <li class="mb-1 lg:mb-2">respect the legitimacy and authority of teachers;</li>
+            <li class="mb-1 lg:mb-2">participate in Learner Representative Councils (LRCs) to safeguard my interests;</li>
+            <li class="mb-1 lg:mb-2">show respect to other learners and not to discriminate;</li>
+            <li class="mb-1 lg:mb-2">avoid anti-social behaviour like theft, vandalism, assault, sexual harassment, alcohol <br class="hidden lg:block"> and drug use, and other activities that disrupt the learning process.</li>
           </ul>
-          <button @click="isOpen = !isOpen" type="button" class="w-128 mt-8 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:mt-16">
-            <h4 class="text-yellow-600 text-lg lg:ml-4 lg:text-2xl">My Pledge to be a Sharky</h4>
+          <button @click="isOpen = !isOpen" type="button" class="w-72 mt-8 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128 lg:mt-16">
+            <h4 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">My Pledge to be a Sharky</h4>
             <div class="bg-red-900 rounded-r-lg">
               <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
             </div>
           </button>
-          <div :class="isOpen ? 'block' : 'hidden'" class="flex flex-col items-start justify-start lg:mt-8">
-            <p class="my-2 ml-2 font-semibold lg:my-4 lg:ml-4">This is the pledge all grade 8’s make by <br class="hidden lg:block"> candlelight before becoming fully fledged <br class="hidden lg:block"> learners of our proud school:</p>
+          <div :class="isOpen ? 'block' : 'hidden'" class="flex flex-col items-start justify-start w-full text-xs font-semibold lg:mt-8 lg:text-sm">
+            <p class="my-2 ml-2 font-semibold lg:my-4 lg:ml-4">This is the pledge all grade 8’s make by <br> candlelight before becoming fully fledged <br> learners of our proud school:</p>
             <p class="ml-2 lg:ml-4"><strong>I hereby promise to:</strong> <br>
               Be loyal to my school at all times <br>
-              Show respect to my educators, fellow students <br class="hidden lg:block"> and myself <br>
+              Show respect to my educators, fellow <br class="lg:hidden"> students <br class="hidden lg:block"> and myself <br>
               Study hard and at all times give my best <br>
               Be focused and responsible <br>
               Participate in school activities <br>
@@ -70,32 +70,32 @@
       </section>
       <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
         <div>
-          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Parent's <span class="text-red-900">Pledge</span></h2>
+          <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">Parent's <span class="text-red-900">Pledge</span></h2>
           <h3 class="mb-2 font-semibold text-lg lg:mb-4 lg:text-2xl">As the caring parent of a learner at Gansbaai Academia I pledge to:</h3>
-          <ul class="list-disc lg:ml-8">
-            <li class="lg:mb-2">involve myself actively in the activities of the school, including school governance <br class="hidden lg:block"> structures; have regular discussions with my children about general school matters;</li>
-            <li class="lg:mb-2">cultivate a healthy, open and cooperative relationship with my children’s teachers;</li>
-            <li class="lg:mb-2">create a home environment conducive to study;</li>
-            <li class="lg:mb-2">assist in the protection of educational resources such as textbooks, chairs, tables and others.</li>
-            <li class="lg:mb-2">Contribute, within my means, the necessary resources to the schooling of my children</li>
+          <ul class="ml-4 list-disc lg:ml-8">
+            <li class="mb-1 lg:mb-2">involve myself actively in the activities of the school, including school governance <br class="hidden lg:block"> structures; have regular discussions with my children about general school matters;</li>
+            <li class="mb-1 lg:mb-2">cultivate a healthy, open and cooperative relationship with my children’s teachers;</li>
+            <li class="mb-1 lg:mb-2">create a home environment conducive to study;</li>
+            <li class="mb-1 lg:mb-2">assist in the protection of educational resources such as textbooks, chairs, tables and others.</li>
+            <li class="mb-1 lg:mb-2">Contribute, within my means, the necessary resources to the schooling of my children</li>
           </ul>
         </div>
       </section>
       <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
         <div>
-          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Parental <span class="text-red-900">Responsibilities</span></h2>
+          <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">Parental <span class="text-red-900">Responsibilities</span></h2>
           <h3 class="mb-2 font-semibold text-lg lg:mb-4 lg:text-2xl">How should I contribute towards the development of my child’s school?</h3>
-          <p class="mb-2 lg:mb-4">As a parent, you have a responsibility to contribute towards the development of the school <br class="hidden lg:block"> by rendering services to the school. This may include making yourself available to participate <br class="hidden lg:block"> in the activities of the school such as the maintenance of school property, auditing of financial <br class="hidden lg:block"> statements, managing sports events, helping manage school trips etc.</p>
+          <p class="mb-4 lg:mb-8">As a parent, you have a responsibility to contribute towards the development of the school <br class="hidden lg:block"> by rendering services to the school. This may include making yourself available to participate <br class="hidden lg:block"> in the activities of the school such as the maintenance of school property, auditing of financial <br class="hidden lg:block"> statements, managing sports events, helping manage school trips etc.</p>
           <h3 class="mb-2 font-semibold text-lg lg:mb-4 lg:text-2xl">What role can I play in supporting the learning process of my child?</h3>
           <p class="mb-4 lg:mb-8">Your child is in the custody of the school staff when she/he is at the school. The school <br class="hidden lg:block"> staff can successfully carryout their teaching responsibilities if they receive the support <br class="hidden lg:block"> of the parents.</p>
           <h4 class="mb-2 font-semibold lg:mb-4 lg:text-xl">As a parent you have the responsibility to:</h4>
-          <ul class="list-disc lg:ml-8">
-            <li class="lg:mb-2">make sure that your child attends school regularly;</li>
-            <li class="lg:mb-2">assist with the discipline of your child;</li>
-            <li class="lg:mb-2">assist the school in promoting a culture of mutual respect and tolerance;</li>
-            <li class="lg:mb-2">monitor your child’s educational progress;</li>
-            <li class="lg:mb-2">ensure that she/he completes her/his homework;</li>
-            <li class="lg:mb-2">liase with the school staff and;</li>
+          <ul class="mb-4 ml-4 list-disc lg:mb-8 lg:ml-8">
+            <li class="mb-1 lg:mb-2">make sure that your child attends school regularly;</li>
+            <li class="mb-1 lg:mb-2">assist with the discipline of your child;</li>
+            <li class="mb-1 lg:mb-2">assist the school in promoting a culture of mutual respect and tolerance;</li>
+            <li class="mb-1 lg:mb-2">monitor your child’s educational progress;</li>
+            <li class="mb-1 lg:mb-2">ensure that she/he completes her/his homework;</li>
+            <li class="mb-1 lg:mb-2">liase with the school staff and;</li>
             <li class="mb-4 lg:mb-8">respond to school notices calling for responses.</li>
           </ul>
           <h3 class="mb-2 font-semibold text-lg lg:mb-4 lg:text-2xl">How can I keep abreast of developments at the school?</h3>

@@ -28,37 +28,69 @@
           <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Headmaster's <span class="text-red-900">Welcome</span></h2>
           <p class="mb-2 lg:mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos exercitationem <br class="hidden lg:block"> quae eum, asperiores unde fugit, minima explicabo saepe dicta, id numquam ea porro <br class="hidden lg:block"> nihil sed sunt labore aperiam. Necessitatibus eos consequatur excepturi est fuga cumque <br class="hidden lg:block"> veniam quidem vitae veritatis voluptatibus repellendus itaque vel neque saepe minus, non <br class="hidden lg:block"> repudiandae quia. Vitae?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem voluptates <br class="hidden lg:block"> ab quidem optio odio dolor totam obcaecati facere velit quibusdam saepe odit exercitationem <br class="hidden lg:block"> consectetur cum rem, pariatur at distinctio repudiandae praesentium accusantium minima <br class="hidden lg:block"> excepturi. Fugiat vel commodi repellat, minus earum sunt voluptatem delectus sit sapiente <br class="hidden lg:block"> vero, nam pariatur eius.</p>
-          <button @click="isOpen1 = !isOpen1" type="button" class="w-128 mt-6 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:mt-12">
-            <h2 class="text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Core Aims</h2>
-            <div class="bg-red-900 rounded-r-lg">
-              <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
-            </div>
-          </button>
-          <div :class="isOpen1 ? 'block' : 'hidden'" class="flex flex-col items-start justify-start w-full text-sm font-semibold uppercase lg:mt-8">
-            <ul class="list-disc lg:ml-8">
-              <li class="lg:mb-2">To raise the attainment of students of all abilities and</li>
-              <li class="lg:mb-2">Ensure achievement in its broadest sense.</li>
-              <li>To promote and celebrate diversity.</li>
-            </ul>
-          </div>
-          <button @click="isOpen2 = !isOpen2" type="button" class="w-128 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:mt-8">
-            <h2 class="text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Our History</h2>
-            <div class="bg-red-900 rounded-r-lg">
-              <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
-            </div>
-          </button>
-          <div :class="isOpen2 ? 'block' : 'hidden'" class="flex flex-col items-start justify-start w-ful lg:mt-8">
-            <p class="lg:ml-4">Lorem ipsum dolor, sit amet consectetur adipisicing <br class="hidden lg:block"> elit. Nisi iure dolorem saepe corrupti accusamus <br class="hidden lg:block"> nostrum ad! Illo suscipit architecto optio, blanditiis, <br class="hidden lg:block"> ullam voluptas quos praesentium quia consequatur <br class="hidden lg:block"> voluptatibus corporis eum?</p>
-            <g-link class="mt-2 text-blue-800 lg:mt-4 lg:ml-4" to="/about"><strong>Read more...</strong></g-link>
-          </div>
         </div>
         <div class="flex justify-center items-center">
           <g-image class="mt-8 rounded-lg lg:mt-16 lg:mr-40 lg:rounded" src="../../static/img/headmaster-img.webp" alt="Mr Wilson, Gansbaai Academia's headmaster." />
         </div>
       </section>
+      <section class="mt-8 mx-4 lg:flex lg:flex-col justify-center items-start lg:mt-16 lg:ml-40">
+        <button @click="isOpen1 = !isOpen1" type="button" class="w-72 mt-6 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128 lg:mt-12">
+          <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Core Aims</h2>
+          <div class="bg-red-900 rounded-r-lg">
+            <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+          </div>
+        </button>
+        <div :class="isOpen1 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
+          <ul class="ml-6 list-disc">
+            <li class="mb-1 lg:mb-2">To raise the attainment of students of all <br class="lg:hidden"> abilities and</li>
+            <li class="mb-1 lg:mb-2">Ensure achievement in its broadest sense.</li>
+            <li>To promote and celebrate diversity.</li>
+          </ul>
+        </div>
+        <button @click="isOpen2 = !isOpen2" type="button" class="w-72 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128">
+          <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Our History</h2>
+          <div class="bg-red-900 rounded-r-lg">
+            <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+          </div>
+        </button>
+        <div :class="isOpen2 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
+          <p class="ml-2 lg:ml-4">Lorem ipsum dolor, sit amet consectetur <br class="lg:hidden"> adipisicing <br class="hidden lg:block"> elit. Nisi iure dolorem saepe <br class="lg:hidden"> corrupti accusamus <br class="hidden lg:block"> nostrum ad! Illo suscipit <br class="lg:hidden"> architecto optio, blanditiis, <br class="hidden lg:block"> ullam voluptas quos <br class="lg:hidden"> praesentiumquia consequatur <br class="hidden lg:block"> voluptatibus <br class="lg:hidden"> corporis eum? <g-link to="/about"><strong>Read more...</strong></g-link></p>
+        </div>
+      </section>
       <section class="mt-10 py-10 bg-red-900 lg:flex justify-center items-center lg:mt-20 lg:py-20">
         <video class="hidden bg-black lg:block" controls type="video/mp4" poster="../../static/img/video-thumbnail.webp" src="https://rondebosch.com/high/wp-content/uploads/2019/07/video2019.mp4" width="720"></video>
         <video class="mt-1 ml-5 bg-black lg:hidden" controls type="video/mp4" poster="../../static/img/video-thumbnail.webp" src="https://rondebosch.com/high/wp-content/uploads/2019/07/video2019.mp4" width="330"></video>
+      </section>
+      <section class="bg-gray-200 text-gray-900 flex justify-center items-center lg:py-20">
+        <div class="flex justify-center items-center">
+        <div class="relative rounded-full shadow-lg overflow-hidden">
+          <g-image class="rounded-full" src="../../static/img/home-sports.webp" alt="" width="360" height="360" />
+          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
+            <h2 class="z-50 font-semibold">Sports</h2>
+          </div>
+          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
+            <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+          </div>
+        </div>
+        <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-8">
+          <g-image class="rounded-full" src="../../static/img/home-arts.webp" alt="" width="360" height="360" />
+          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
+            <h2 class="z-50 font-semibold">Arts</h2>
+          </div>
+          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
+            <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+          </div>
+        </div>
+        <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-8">
+          <g-image class="rounded-full" src="../../static/img/home-clubs.webp" alt="" width="360" height="360" />
+          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
+            <h2 class="z-50 font-semibold">Clubs</h2>
+          </div>
+          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
+            <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+          </div>
+        </div>
+        </div>
       </section>
     </section>
   </Layout>
