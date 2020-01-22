@@ -32,7 +32,7 @@
         </ul>
       </section>
     </section>
-    <section class="ml-10 block text-lg lg:hidden">
+    <section class="ml-10 pl-1 block text-lg lg:hidden">
         <h3 class="text-yellow-700 font-semibold">Get in touch</h3>
         <ul class="text-gray-100 rounded list-reset" v-for="contactItem in contactItems" :key="contactItem.title">
           <li class="my-3">

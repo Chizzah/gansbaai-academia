@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="text-gray-900 lg:text-xl">
-      <section id="heroSection">
+      <section>
         <div class="relative bg-black">
           <g-image class="w-full h-full opacity-75" src="../../static/img/home-hero.webp" alt="Gansbaai Academia school building in Gansbaai, Overberg" height="480" />
           <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start text-gray-100 lg:mt-40">
@@ -57,39 +57,38 @@
           <p class="ml-2 lg:ml-4">Lorem ipsum dolor, sit amet consectetur <br class="lg:hidden"> adipisicing <br class="hidden lg:block"> elit. Nisi iure dolorem saepe <br class="lg:hidden"> corrupti accusamus <br class="hidden lg:block"> nostrum ad! Illo suscipit <br class="lg:hidden"> architecto optio, blanditiis, <br class="hidden lg:block"> ullam voluptas quos <br class="lg:hidden"> praesentiumquia consequatur <br class="hidden lg:block"> voluptatibus <br class="lg:hidden"> corporis eum? <g-link to="/about"><strong>Read more...</strong></g-link></p>
         </div>
       </section>
-      <section class="mt-10 py-10 bg-red-900 lg:flex justify-center items-center lg:mt-20 lg:py-20">
-        <video class="hidden bg-black lg:block" controls type="video/mp4" poster="../../static/img/video-thumbnail.webp" src="https://rondebosch.com/high/wp-content/uploads/2019/07/video2019.mp4" width="720"></video>
-        <video class="mt-1 ml-5 bg-black lg:hidden" controls type="video/mp4" poster="../../static/img/video-thumbnail.webp" src="https://rondebosch.com/high/wp-content/uploads/2019/07/video2019.mp4" width="330"></video>
+      <section class="mt-10 py-10 bg-gray-900 w-full lg:flex justify-center items-center lg:mt-20 lg:py-20">
+        <video class="bg-red-900" controls type="video/mp4" poster="../../static/img/video-thumbnail.webp" src="https://rondebosch.com/high/wp-content/uploads/2019/07/video2019.mp4" width="720"></video>
       </section>
-      <section class="bg-gray-200 text-gray-900 flex justify-center items-center lg:py-20">
-        <div class="flex justify-center items-center">
-        <div class="relative rounded-full shadow-lg overflow-hidden">
-          <g-image class="rounded-full" src="../../static/img/home-sports.webp" alt="" width="360" height="360" />
-          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
-            <h2 class="z-50 font-semibold">Sports</h2>
+      <section class="py-8 bg-gray-200 text-gray-900 flex justify-center items-center lg:py-16">
+        <div class="lg:flex flex-col lg:flex-row justify-center items-center">
+          <div class="my-4 relative rounded-full shadow-lg overflow-hidden">
+            <g-image class="rounded-full" src="../../static/img/home-sports.webp" alt="" width="240" height="240" />
+            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
+              <h2 class="z-50 font-semibold">Sports</h2>
+            </div>
+            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
+              <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+            </div>
           </div>
-          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
-            <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+          <div class="my-4 relative rounded-full shadow-lg overflow-hidden lg:ml-8">
+            <g-image class="rounded-full" src="../../static/img/home-arts.webp" alt="" width="240" height="240" />
+            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
+              <h2 class="z-50 font-semibold">Arts</h2>
+            </div>
+            <div class="my-4 absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
+              <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+            </div>
           </div>
-        </div>
-        <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-8">
-          <g-image class="rounded-full" src="../../static/img/home-arts.webp" alt="" width="360" height="360" />
-          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
-            <h2 class="z-50 font-semibold">Arts</h2>
+          <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-8">
+            <g-image class="rounded-full" src="../../static/img/home-clubs.webp" alt="" width="240" height="240" />
+            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
+              <h2 class="z-50 font-semibold">Clubs</h2>
+            </div>
+            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
+              <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+            </div>
           </div>
-          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
-            <div class="py-8 w-full bg-gray-100 opacity-50"></div>
-          </div>
-        </div>
-        <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-8">
-          <g-image class="rounded-full" src="../../static/img/home-clubs.webp" alt="" width="360" height="360" />
-          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
-            <h2 class="z-50 font-semibold">Clubs</h2>
-          </div>
-          <div class="absolute top-0 left-0 mt-24 w-full h-full flex justify-center items-center">
-            <div class="py-8 w-full bg-gray-100 opacity-50"></div>
-          </div>
-        </div>
         </div>
       </section>
     </section>
