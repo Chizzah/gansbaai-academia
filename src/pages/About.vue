@@ -31,30 +31,30 @@
         <div>
           <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">Curriculum</span></h2>
           <p>The school is a parallel medium school teaching home languages of Xhosa or <br class="hidden lg:block"> Afrikaans. All other subjects are taught in English or Afrikaans. Thus English speaking <br class="hidden lg:block"> learners can have all their subjects taught in English, but have to choose between <br class="hidden lg:block"> Xhosa or Afrikaans as their mother language.</p>
-          <button @click="isOpen1 = !isOpen1" type="button" class="w-128 mt-8 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:mt-16">
-            <h2 class="text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Core Subjects</h2>
+          <button @click="isOpen1 = !isOpen1" type="button" class="w-72 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128">
+            <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Core Subjects</h2>
             <div class="bg-red-900 rounded-r-lg">
               <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
             </div>
           </button>
-          <div :class="isOpen1 ? 'block' : 'hidden'" class="flex flex-col items-start justify-start text-sm font-semibold uppercase lg:mt-8">
-            <ul class="list-disc lg:ml-8">
-              <li class="lg:mb-2">Home Language Xhosa or Afrikaans</li>
-              <li class="lg:mb-2">Second Language English</li>
-              <li class="lg:mb-2">Mathematics or Mathematics Literacy</li>
+          <div :class="isOpen1 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
+            <ul class="ml-6 list-disc">
+              <li class="mb-1 lg:mb-2">Home Language Xhosa or Afrikaans</li>
+              <li class="mb-1 lg:mb-2">Second Language English</li>
+              <li class="mb-1 lg:mb-2">Mathematics or Mathematics Literacy</li>
               <li>Life orientation</li>
             </ul>
           </div>
-          <button @click="isOpen2 = !isOpen2" type="button" class="w-128 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:mt-8">
-            <h2 class="text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Other Subjects</h2>
+          <button @click="isOpen2 = !isOpen2" type="button" class="w-72 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128">
+            <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Other Subjects</h2>
             <div class="bg-red-900 rounded-r-lg">
               <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
             </div>
           </button>
-          <div :class="isOpen2 ? 'block' : 'hidden'" class="flex flex-col items-start justify-start w-full text-sm font-semibold uppercase lg:mt-8">
-            <ul class="list-disc lg:ml-8">
-              <li class="lg:mb-2">Gr 8 – 9: Social Sciences, Natural Sciences, Arts <br class="hidden lg:block"> and Culture, Technology, Economic Management <br class="hidden lg:block"> Sciences</li>
-              <li>Gr 10-12 A choice of 3 subjects from Accounting, <br class="hidden lg:block"> Business Studies, Computer Applications Technology, <br class="hidden lg:block"> Geography, Hospitality Studies, Life Sciences, Physical <br class="hidden lg:block"> Sciences or Tourism</li>
+          <div :class="isOpen2 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
+            <ul class="ml-6 list-disc">
+              <li class="mb-1 lg:mb-2">Gr 8 – 9: Social Sciences, Natural Sciences, <br class="lg:hidden"> Arts <br class="hidden lg:block"> and Culture, Technology, Economic <br class="lg:hidden"> Management <br class="hidden lg:block"> Sciences</li>
+              <li>Gr 10-12 A choice of 3 subjects from <br class="lg:hidden"> Accounting, <br class="hidden lg:block"> Business Studies, Computer <br class="lg:hidden"> Applications Technology, <br class="hidden lg:block"> Geography, <br class="lg:hidden"> Hospitality Studies, Life Sciences, <br class="lg:hidden"> Physical <br class="hidden lg:block"> Sciences or Tourism</li>
             </ul>
           </div>
         </div>

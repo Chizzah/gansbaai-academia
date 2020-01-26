@@ -4,6 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+require('dotenv').config()
+
 module.exports = {
   siteName: 'Gansbaai Academia',
   plugins: [
@@ -17,6 +19,19 @@ module.exports = {
         shouldImport: true,
         shouldTimeTravel: true
       }
+    },
+    {
+      use: '@gridsome/source-contentful',
+      options: {
+        space: process.env.CONTENTFUL_SPACE,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: 'cdn.contentful.com',
+        environment: process.env.CONTENTFUL_ENVIRONMENT,
+        typeName: 'Contentful'
+      }
     }
-  ]
+  ],
+  templates: {
+    ContentfulArticle: '/articles/:slug'
+  }
 }

@@ -57,43 +57,83 @@
           <p class="ml-2 lg:ml-4">Lorem ipsum dolor, sit amet consectetur <br class="lg:hidden"> adipisicing <br class="hidden lg:block"> elit. Nisi iure dolorem saepe <br class="lg:hidden"> corrupti accusamus <br class="hidden lg:block"> nostrum ad! Illo suscipit <br class="lg:hidden"> architecto optio, blanditiis, <br class="hidden lg:block"> ullam voluptas quos <br class="lg:hidden"> praesentiumquia consequatur <br class="hidden lg:block"> voluptatibus <br class="lg:hidden"> corporis eum? <g-link to="/about"><strong>Read more...</strong></g-link></p>
         </div>
       </section>
-      <section class="mt-10 py-10 bg-gray-900 w-full lg:flex justify-center items-center lg:mt-20 lg:py-20">
-        <video class="bg-red-900" controls type="video/mp4" poster="../../static/img/video-thumbnail.webp" src="https://rondebosch.com/high/wp-content/uploads/2019/07/video2019.mp4" width="720"></video>
+      <section class="mt-10 py-10 bg-red-900 w-full lg:flex justify-center items-center lg:mt-20 lg:py-20">
+        <video class="bg-gray-900" controls type="video/mp4" poster="../../static/img/video-thumbnail.webp" src="https://rondebosch.com/high/wp-content/uploads/2019/07/video2019.mp4" width="720"></video>
       </section>
-      <section class="py-8 bg-gray-200 text-gray-900 flex justify-center items-center lg:py-16">
-        <div class="lg:flex flex-col lg:flex-row justify-center items-center">
-          <div class="my-4 relative rounded-full shadow-lg overflow-hidden">
-            <g-image class="rounded-full" src="../../static/img/home-sports.webp" alt="" width="240" height="240" />
-            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
-              <h2 class="z-50 font-semibold">Sports</h2>
+        <section class="py-12 bg-gray-200 text-gray-100 flex justify-center items-center">
+          <div class="lg:flex flex-col lg:flex-row justify-center items-center">
+            <div class="my-4 relative rounded-full shadow-lg overflow-hidden">
+              <g-image class="rounded-full" src="../../static/img/home-sports.webp" alt="Gansbaai Academia sports" width="310" height="310" />
+              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+                <h2 class="z-50 font-semibold uppercase">Sports</h2>
+              </div>
+              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+                <div class="py-6 w-full bg-red-900 opacity-75"></div>
+              </div>
             </div>
-            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
-              <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+            <div class="my-4 relative rounded-full shadow-lg overflow-hidden lg:ml-16">
+              <g-image class="rounded-full" src="../../static/img/home-arts.webp" alt="Gansbaai Academia arts" width="310" height="310" />
+              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+                <h2 class="z-50 font-semibold uppercase">Arts</h2>
+              </div>
+              <div class="my-4 absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+                <div class="py-6 w-full bg-red-900 opacity-75"></div>
+              </div>
+            </div>
+            <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-16">
+              <g-image class="rounded-full" src="../../static/img/home-clubs.webp" alt="Gansbaai Academia clubs" width="310" height="310" />
+              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+                <h2 class="z-50 font-semibold uppercase">Societies</h2>
+              </div>
+              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+                <div class="py-6 w-full bg-red-900 opacity-75"></div>
+              </div>
             </div>
           </div>
-          <div class="my-4 relative rounded-full shadow-lg overflow-hidden lg:ml-8">
-            <g-image class="rounded-full" src="../../static/img/home-arts.webp" alt="" width="240" height="240" />
-            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
-              <h2 class="z-50 font-semibold">Arts</h2>
+        </section>
+      <section>
+        <h2 class="my-8 mx-4 text-xl lg:mb-8 lg:text-6xl lg:mt-16 lg:ml-40">Latest <span class="text-red-900">News</span></h2>
+        <section class="flex flex-col lg:flex-row justify-center items-center lg:py-24">
+          <section class="flex flex-col justify-center items-start lg:mx-12" v-for="edge in $page.articles.edges" :key="edge.node.id">
+            <div class="">
+              <g-image class="rounded" :src="`${edge.node.image.file.url}?w=350&h=350`" :alt="edge.node.image.file.title" />
             </div>
-            <div class="my-4 absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
-              <div class="py-8 w-full bg-gray-100 opacity-50"></div>
+            <div class="mt-4 mb-8 ml-2">
+              <h3 class="text-red-900 text-sm font-semibold">{{ edge.node.title }}</h3>
+              <p class="text-xs">by {{ edge.node.author.name }}</p>
+              <g-link class="text-yellow-700 text-sm font-semibold" :to="edge.node.path">Read more</g-link>
             </div>
-          </div>
-          <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-8">
-            <g-image class="rounded-full" src="../../static/img/home-clubs.webp" alt="" width="240" height="240" />
-            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
-              <h2 class="z-50 font-semibold">Clubs</h2>
-            </div>
-            <div class="absolute top-0 left-0 mt-16 w-full h-full flex justify-center items-center">
-              <div class="py-8 w-full bg-gray-100 opacity-50"></div>
-            </div>
-          </div>
-        </div>
+          </section>
+        </section>
       </section>
     </section>
   </Layout>
 </template>
+
+<page-query>
+  query Articles {
+    articles: allContentfulArticle(sortBy: "date", order: DESC, limit: 3) {
+      edges {
+        node {
+          id
+          path
+          date(format: "DD MMMM YYYY")
+          title
+          author {
+            name
+          }
+          summary
+          image {
+            title
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
 export default {
