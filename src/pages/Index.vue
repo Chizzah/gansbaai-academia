@@ -60,42 +60,42 @@
       <section class="mt-10 py-10 bg-red-900 w-full lg:flex justify-center items-center lg:mt-20 lg:py-20">
         <video class="bg-gray-900" controls type="video/mp4" poster="../../static/img/video-thumbnail.webp" src="https://rondebosch.com/high/wp-content/uploads/2019/07/video2019.mp4" width="720"></video>
       </section>
-        <section class="py-12 bg-gray-200 text-gray-100 flex justify-center items-center">
-          <div class="lg:flex flex-col lg:flex-row justify-center items-center">
-            <div class="my-4 relative rounded-full shadow-lg overflow-hidden">
-              <g-image class="rounded-full" src="../../static/img/home-sports.webp" alt="Gansbaai Academia sports" width="310" height="310" />
-              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
-                <h2 class="z-50 font-semibold uppercase">Sports</h2>
-              </div>
-              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
-                <div class="py-6 w-full bg-red-900 opacity-75"></div>
-              </div>
+      <section class="py-12 bg-gray-200 text-gray-100 flex justify-center items-center">
+        <div class="lg:flex flex-col lg:flex-row justify-center items-center">
+          <div class="my-4 relative rounded-full shadow-lg overflow-hidden">
+            <g-image class="rounded-full" src="../../static/img/home-sports.webp" alt="Gansbaai Academia sports" width="310" height="310" />
+            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+              <h2 class="z-50 font-semibold uppercase">Sports</h2>
             </div>
-            <div class="my-4 relative rounded-full shadow-lg overflow-hidden lg:ml-16">
-              <g-image class="rounded-full" src="../../static/img/home-arts.webp" alt="Gansbaai Academia arts" width="310" height="310" />
-              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
-                <h2 class="z-50 font-semibold uppercase">Arts</h2>
-              </div>
-              <div class="my-4 absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
-                <div class="py-6 w-full bg-red-900 opacity-75"></div>
-              </div>
-            </div>
-            <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-16">
-              <g-image class="rounded-full" src="../../static/img/home-clubs.webp" alt="Gansbaai Academia clubs" width="310" height="310" />
-              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
-                <h2 class="z-50 font-semibold uppercase">Societies</h2>
-              </div>
-              <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
-                <div class="py-6 w-full bg-red-900 opacity-75"></div>
-              </div>
+            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+              <div class="py-6 w-full bg-red-900 opacity-75"></div>
             </div>
           </div>
-        </section>
+          <div class="my-4 relative rounded-full shadow-lg overflow-hidden lg:ml-16">
+            <g-image class="rounded-full" src="../../static/img/home-arts.webp" alt="Gansbaai Academia arts" width="310" height="310" />
+            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+              <h2 class="z-50 font-semibold uppercase">Arts</h2>
+            </div>
+            <div class="my-4 absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+              <div class="py-6 w-full bg-red-900 opacity-75"></div>
+            </div>
+          </div>
+          <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-16">
+            <g-image class="rounded-full" src="../../static/img/home-clubs.webp" alt="Gansbaai Academia clubs" width="310" height="310" />
+            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+              <h2 class="z-50 font-semibold uppercase">Societies</h2>
+            </div>
+            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+              <div class="py-6 w-full bg-red-900 opacity-75"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
         <h2 class="my-8 mx-4 text-xl lg:mb-8 lg:text-6xl lg:mt-16 lg:ml-40">Latest <span class="text-red-900">News</span></h2>
         <section class="flex flex-col lg:flex-row justify-center items-center lg:py-24">
           <section class="flex flex-col justify-center items-start lg:mx-12" v-for="edge in $page.articles.edges" :key="edge.node.id">
-            <div class="">
+            <div>
               <g-image class="rounded" :src="`${edge.node.image.file.url}?w=350&h=350`" :alt="edge.node.image.file.title" />
             </div>
             <div class="mt-4 mb-8 ml-2">
@@ -138,7 +138,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'High School in the Gansbaai, Overberg | Gansbaai Academia'
+    title: 'High School in Gansbaai, Overberg | Gansbaai Academia'
   },
   data() {
     return {

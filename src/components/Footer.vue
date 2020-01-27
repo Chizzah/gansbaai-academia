@@ -61,12 +61,11 @@ export default {
       quickLinksItems: [
         { title:'Pledges', route:'/pledges' },
         { title:'Extracurricular', route:'/extracurricular' },
-        { title:'Grade Shark', route:'/gradeshark' },
         { title:'Sponsorships', route:'/sponsorships' }
       ],
       contactItems: [
         { title:'Sign Up', route:'/newsletter' },
-        { title:'Contact Us', route:'/gansbaai-academia-contact' }
+        { title:'Contact Us', route:'/contact' }
       ],
       isOpen: false,
     }

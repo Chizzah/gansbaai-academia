@@ -39,7 +39,7 @@ export default {
         { title:'About', route:'/about' },
         { title:'News', route:'/news' },
         { title:'Calendar', route:'/calendar' },
-        { title:'Contact', route:'/gansbaai-academia-contact' }
+        { title:'Contact', route:'/contact' }
       ],
       isOpen: false,
     }
