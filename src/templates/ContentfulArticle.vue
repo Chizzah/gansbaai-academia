@@ -7,7 +7,7 @@
         <p class="mb-4 lg:mb-8 lg:text-2xl">by {{ $page.article.author.name }}</p>
         <p class="mr-3 text-gray-700 lg:mr-96"><strong class="text-red-900 uppercase">Quick Summary:</strong> {{ $page.article.summary }}</p>
         <div class="mt-4 h-1 border border-solid bg-gray-400 lg:mt-8 lg:w-256"></div>
-        <g-image class="my-6 lg:my-12" :src="$page.article.image.file.url" :alt="$page.article.title" />
+        <g-image class="my-6 lg:my-12" :src="$page.article.image.file.url" :alt="$page.article.image.description" />
         <vue-simple-markdown class="mr-3 lg:mr-96" :source="$page.article.content"></vue-simple-markdown>
       </section>
     </section>
@@ -27,6 +27,7 @@ query Article($path: String!) {
     }
     image {
       title
+      description
       file {
         url
       }
@@ -35,9 +36,3 @@ query Article($path: String!) {
   }
 }
 </page-query>
-
-<script>
-export default {
-
-}
-</script>

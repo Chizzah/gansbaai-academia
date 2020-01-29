@@ -1,29 +1,29 @@
 <template>
   <layout>
-    <section class="text-gray-900 lg:text-xl lg:mt-16 lg:ml-40 articles">
-    <h2 class="my-8 mx-4 text-xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">School News</span></h2>
-			<transition-group name="fade">
-        <ArticleCard v-for="{ node } of loadedArticles"
-					:key="node.id"
-					:articles="node" />
-			</transition-group>
-			<ClientOnly>
-				<infinite-loading class="lg:mt-48" @infinite="infiniteHandler" spinner="spiral">
-					<div slot="no-more">
-						You've scrolled through all the posts ;)
+  	<section class="text-gray-900 lg:text-xl lg:mt-16 lg:ml-40">
+  	<h2 class="my-8 mx-4 text-2xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">School News</span></h2>
+			<section class="flex flex-col justify-start items-start">
+				<section class="flex flex-col justify-start items-center lg:mt-20 lg:flex-row" v-for="edge in $page.articles.edges" :key="edge.node.id">
+					<div>
+						<g-image class="hidden rounded lg:block" :src="`${edge.node.image.file.url}?w=400`" :alt="edge.node.image.description" />
+						<g-image class="rounded lg:hidden" :src="`${edge.node.image.file.url}?w=300`" :alt="edge.node.image.description" />
 					</div>
-					<div slot="no-results">
-						Sorry, no posts yet :(
+					<div class="m-12 lg:w-3/6 lg:m-0 lg:ml-16">
+						<h3 class="text-red-900 font-semibold lg:text-2xl">{{ edge.node.title }}</h3>
+						<p class="mb-4 text-sm">by {{ edge.node.author.name }}</p>
+						<p class="mb-4">{{ edge.node.summary }}</p>
+						<g-link class="text-yellow-700 font-semibold" :to="edge.node.path">Read more</g-link>
 					</div>
-				</infinite-loading>
-			</ClientOnly>
+				</section>
+    			<Pager class="w-4/6 flex justify-around items-center text-lg font-semibold lg:mt-20 lg:text-2xl hover:text-red-900" :info="$page.articles.pageInfo"/>
+  		</section>
     </section>
   </layout>
 </template>
 
 <page-query>
-  query Articles($page: Int) {
-    articles: allContentfulArticle(perPage: 10, page: $page, sortBy: "date", order: DESC) @paginate {
+  query ($page: Int) {
+    articles: allContentfulArticle(perPage: 2, page: $page, sortBy: "date", order: DESC) @paginate {
 		pageInfo {
 			totalPages
 			currentPage
@@ -40,6 +40,7 @@
           summary
           image {
             title
+						description
             file {
               url
             }
@@ -51,49 +52,11 @@
 </page-query>
 
 <script>
-import ArticleCard from '~/components/ArticleCard.vue';
+import { Pager } from 'gridsome'
 
 export default {
   components: {
-    ArticleCard
-  },
-	data() {
-		return {
-			loadedArticles: [],
-			currentPage: 1
-		}
-	},
-	created() {
-		this.loadedArticles.push(...this.$page.articles.edges)
-	},
-	methods: {
-		async infiniteHandler($state) {
-			if (this.currentPage + 1 > this.$page.articles.pageInfo.totalPages) {
-				$state.complete()
-			} else {
-				const { data } = await this.$fetch(
-					`/news/${this.currentPage + 1}`
-				)
-				if (data.articles.edges.length) {
-					this.currentPage = data.articles.pageInfo.currentPage
-					this.loadedArticles.push(...data.articles.edges)
-					$state.loaded()
-				} else {
-					$state.complete()
-				}
-			}
-		}
-	}
+    Pager
+  }
 }
 </script>
-
-<style lang="postcss" scoped>
-.fade-enter-active,
-.fade-leave-active {
-	transition: ease opacity 1;
-}
-.fade-enter,
-.fade-leave-to {
-	opacity: 0;
-}
-</style>

@@ -16,7 +16,7 @@
       </section>
       <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
         <div>
-          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">Vision</span></h2>
+          <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">Vision</span></h2>
           <p>To be an excellent comprehensive community school, with a <br class="hidden lg:block"> strong emphasis in the area of Hospitality, CAT, Tourism and <br class="hidden lg:block"> Maritime Studies. To be a community which works together to <br class="hidden lg:block"> ensure all students are inspired, and empowered, to achieve <br class="hidden lg:block"> their full potential.</p>
         </div>
         <div>
@@ -25,7 +25,7 @@
       </section>
       <section class="mt-8 mx-4 lg:flex justify-between items-center lg:mt-16 lg:ml-40">
         <div>
-          <h2 class="mb-4 text-xl lg:mb-8 lg:text-6xl">Headmaster's <span class="text-red-900">Welcome</span></h2>
+          <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">Headmaster's <span class="text-red-900">Welcome</span></h2>
           <p class="mb-2 lg:mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos exercitationem <br class="hidden lg:block"> quae eum, asperiores unde fugit, minima explicabo saepe dicta, id numquam ea porro <br class="hidden lg:block"> nihil sed sunt labore aperiam. Necessitatibus eos consequatur excepturi est fuga cumque <br class="hidden lg:block"> veniam quidem vitae veritatis voluptatibus repellendus itaque vel neque saepe minus, non <br class="hidden lg:block"> repudiandae quia. Vitae?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem voluptates <br class="hidden lg:block"> ab quidem optio odio dolor totam obcaecati facere velit quibusdam saepe odit exercitationem <br class="hidden lg:block"> consectetur cum rem, pariatur at distinctio repudiandae praesentium accusantium minima <br class="hidden lg:block"> excepturi. Fugiat vel commodi repellat, minus earum sunt voluptatem delectus sit sapiente <br class="hidden lg:block"> vero, nam pariatur eius.</p>
         </div>
@@ -63,45 +63,48 @@
       <section class="py-12 bg-gray-200 text-gray-100 flex justify-center items-center">
         <div class="lg:flex flex-col lg:flex-row justify-center items-center">
           <div class="my-4 relative rounded-full shadow-lg overflow-hidden">
-            <g-image class="rounded-full" src="../../static/img/home-sports.webp" alt="Gansbaai Academia sports" width="310" height="310" />
-            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+            <g-image class="rounded-full hidden lg:block" src="../../static/img/home-sports.webp" alt="Gansbaai Academia sports" width="300" height="300" />
+            <g-image class="rounded-full lg:hidden" src="../../static/img/home-sports.webp" alt="Gansbaai Academia sports" width="240" height="240" />
+            <div class="mt-16 absolute top-0 left-0 w-full h-full flex justify-center items-center lg:mt-24">
               <h2 class="z-50 font-semibold uppercase">Sports</h2>
             </div>
-            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+            <div class="mt-16 absolute top-0 left-0 w-full h-full flex justify-center items-center lg:mt-24">
               <div class="py-6 w-full bg-red-900 opacity-75"></div>
             </div>
           </div>
           <div class="my-4 relative rounded-full shadow-lg overflow-hidden lg:ml-16">
-            <g-image class="rounded-full" src="../../static/img/home-arts.webp" alt="Gansbaai Academia arts" width="310" height="310" />
-            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+            <g-image class="rounded-full hidden lg:block" src="../../static/img/home-arts.webp" alt="Gansbaai Academia arts" width="300" height="300" />
+            <g-image class="rounded-full lg:hidden" src="../../static/img/home-arts.webp" alt="Gansbaai Academia arts" width="240" height="240" />
+            <div class="mt-16 absolute top-0 left-0 w-full h-full flex justify-center items-center lg:mt-24">
               <h2 class="z-50 font-semibold uppercase">Arts</h2>
             </div>
-            <div class="my-4 absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+            <div class="mt-16 absolute top-0 left-0 w-full h-full flex justify-center items-center lg:mt-24">
               <div class="py-6 w-full bg-red-900 opacity-75"></div>
             </div>
           </div>
           <div class="relative rounded-full shadow-lg overflow-hidden lg:ml-16">
-            <g-image class="rounded-full" src="../../static/img/home-clubs.webp" alt="Gansbaai Academia clubs" width="310" height="310" />
-            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+            <g-image class="rounded-full hidden lg:block" src="../../static/img/home-clubs.webp" alt="Gansbaai Academia clubs" width="300" height="300" />
+            <g-image class="rounded-full lg:hidden" src="../../static/img/home-clubs.webp" alt="Gansbaai Academia clubs" width="240" height="240" />
+            <div class="mt-16 absolute top-0 left-0 w-full h-full flex justify-center items-center lg:mt-24">
               <h2 class="z-50 font-semibold uppercase">Societies</h2>
             </div>
-            <div class="absolute top-0 left-0 mt-32 w-full h-full flex justify-center items-center">
+            <div class="mt-16 absolute top-0 left-0 w-full h-full flex justify-center items-center lg:mt-24">
               <div class="py-6 w-full bg-red-900 opacity-75"></div>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <h2 class="my-8 mx-4 text-xl lg:mb-8 lg:text-6xl lg:mt-16 lg:ml-40">Latest <span class="text-red-900">News</span></h2>
+        <h2 class="my-8 mx-4 text-2xl lg:mb-8 lg:text-6xl lg:mt-16 lg:ml-40">Latest <span class="text-red-900">News</span></h2>
         <section class="flex flex-col lg:flex-row justify-center items-center lg:py-24">
-          <section class="flex flex-col justify-center items-start lg:mx-12" v-for="edge in $page.articles.edges" :key="edge.node.id">
+          <section class="flex flex-col justify-center items-start lg:mx-6" v-for="edge in $page.articles.edges" :key="edge.node.id">
             <div>
-              <g-image class="rounded" :src="`${edge.node.image.file.url}?w=350&h=350`" :alt="edge.node.image.file.title" />
+              <g-image class="rounded" :src="`${edge.node.image.file.url}?w=400`" :alt="edge.node.image.description" />
             </div>
-            <div class="mt-4 mb-8 ml-2">
-              <h3 class="text-red-900 text-sm font-semibold">{{ edge.node.title }}</h3>
-              <p class="text-xs">by {{ edge.node.author.name }}</p>
-              <g-link class="text-yellow-700 text-sm font-semibold" :to="edge.node.path">Read more</g-link>
+            <div class="mt-4 mb-8 ml-2 lg:w-3/6">
+              <h3 class="text-red-900 text-xl font-semibold lg:text-lg">{{ edge.node.title }}</h3>
+              <p class="mb-4 lg:text-sm">by {{ edge.node.author.name }}</p>
+              <g-link class="text-yellow-700 text-lg font-semibold" :to="edge.node.path">Read more</g-link>
             </div>
           </section>
         </section>
@@ -125,6 +128,7 @@
           summary
           image {
             title
+            description
             file {
               url
             }
