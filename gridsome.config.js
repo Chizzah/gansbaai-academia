@@ -8,7 +8,16 @@ require('dotenv').config()
 
 module.exports = {
   siteName: 'Gansbaai Academia',
+  siteUrl: 'https://www.gansbaai-academia.co.za',
   plugins: [
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000, // default
+        exclude: ['/exclude-me'],
+        config: { }
+      }
+    },
     {
       use: 'gridsome-plugin-tailwindcss',
       options: {

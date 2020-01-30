@@ -37,7 +37,7 @@
         <button @click="isOpen1 = !isOpen1" type="button" class="w-72 mt-6 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128 lg:mt-12">
           <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Core Aims</h2>
           <div class="bg-red-900 rounded-r-lg">
-            <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+            <g-image class="h-16" src="../../static/icons/cheveron-right.svg" alt="First cheveron pointing right." /> 
           </div>
         </button>
         <div :class="isOpen1 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
@@ -50,7 +50,7 @@
         <button @click="isOpen2 = !isOpen2" type="button" class="w-72 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128">
           <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Our History</h2>
           <div class="bg-red-900 rounded-r-lg">
-            <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+            <g-image class="h-16" src="../../static/icons/cheveron-right.svg" alt="Second cheveron pointing right." /> 
           </div>
         </button>
         <div :class="isOpen2 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
@@ -93,6 +93,11 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="py-10 bg-red-900 flex flex-col justify-center items-center lg:py-20">
+        <h2 class="mb-8 text-gray-100 text-4xl font-bold lg:text-6xl">Stay <span class="text-yellow-600">Updated</span></h2>
+        <iframe class="hidden rounded-lg lg:block" src="https://calendar.google.com/calendar/b/4/embed?height=480&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Africa%2FJohannesburg&amp;src=Z2Fuc2JhYWlhY2FkZW1pYUBnbWFpbC5jb20&amp;color=%2322AA99&amp;mode=MONTH&amp;showTabs=1&amp;showPrint=0&amp;showNav=1&amp;showDate=1&amp;showTitle=1&amp;showCalendars=1&amp;showTz=1&amp;title=Gansbaai%20Academia%20Calendar" style="border-width:0" width="720" height="480" frameborder="0" scrolling="no"></iframe>
+        <iframe class="rounded-lg lg:hidden" src="https://calendar.google.com/calendar/b/4/embed?height=480&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Africa%2FJohannesburg&amp;src=Z2Fuc2JhYWlhY2FkZW1pYUBnbWFpbC5jb20&amp;color=%2322AA99&amp;mode=AGENDA&amp;showTabs=0&amp;showPrint=0&amp;showNav=1&amp;showDate=1&amp;showTitle=1&amp;showCalendars=1&amp;showTz=1&amp;title=Gansbaai%20Academia%20Calendar" style="border-width:0" width="320" height="480" frameborder="0" scrolling="no"></iframe>
       </section>
       <section>
         <h2 class="my-8 mx-4 text-2xl lg:mb-8 lg:text-6xl lg:mt-16 lg:ml-40">Latest <span class="text-red-900">News</span></h2>
@@ -142,12 +147,18 @@
 <script>
 export default {
   metaInfo: {
-    title: 'High School in Gansbaai, Overberg | Gansbaai Academia'
-  },
-  data() {
-    return {
-      isOpen1: false,
-      isOpen2: false,
+    title: 'Top High School in Gansbaai, Overberg',
+    meta: [
+      {
+        name: 'description',
+        content: "Gansbaai Academia's vision is to be a community which works together to ensure all students are inspired, and empowered, to achieve their full potential."
+      }
+    ],
+    data() {
+      return {
+        isOpen1: false,
+        isOpen2: false,
+      }
     }
   }
 }
