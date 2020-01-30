@@ -38,6 +38,7 @@ export default {
         { title:'Home', route:'/' },
         { title:'About', route:'/about' },
         { title:'News', route:'/news' },
+        { title:'Events', route:'/events' },
         { title:'Calendar', route:'/calendar' },
         { title:'Contact', route:'/contact' }
       ],

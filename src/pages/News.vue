@@ -1,7 +1,7 @@
 <template>
   <layout>
   	<section class="text-gray-900 lg:text-xl lg:mt-16 lg:ml-40">
-  	<h2 class="my-8 mx-4 text-2xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">School News</span></h2>
+  	<h1 class="my-8 mx-4 text-2xl lg:mb-8 lg:text-6xl">Our <span class="text-red-900">School News</span></h1>
 			<section class="flex flex-col justify-start items-start">
 				<section class="flex flex-col justify-start items-center lg:mt-20 lg:flex-row" v-for="edge in $page.articles.edges" :key="edge.node.id">
 					<div>
@@ -9,7 +9,7 @@
 						<g-image class="rounded lg:hidden" :src="`${edge.node.image.file.url}?w=300`" :alt="edge.node.image.description" />
 					</div>
 					<div class="m-12 lg:w-3/6 lg:m-0 lg:ml-16">
-						<h3 class="text-red-900 font-semibold lg:text-2xl">{{ edge.node.title }}</h3>
+						<h2 class="text-red-900 font-semibold lg:text-2xl">{{ edge.node.title }}</h2>
 						<p class="mb-4 text-sm">by {{ edge.node.author.name }}</p>
 						<p class="mb-4">{{ edge.node.summary }}</p>
 						<g-link class="text-yellow-700 font-semibold" :to="edge.node.path">Read more</g-link>
