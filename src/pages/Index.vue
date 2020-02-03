@@ -146,6 +146,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      isOpen1: false,
+      isOpen2: false,
+    }
+  },
   metaInfo: {
     title: 'Top High School in Gansbaai, Overberg',
     meta: [
@@ -153,13 +159,7 @@ export default {
         name: 'description',
         content: "Gansbaai Academia's vision is to be a community which works together to ensure all students are inspired, and empowered, to achieve their full potential."
       }
-    ],
-    data() {
-      return {
-        isOpen1: false,
-        isOpen2: false,
-      }
-    }
+    ]
   }
 }
 </script>

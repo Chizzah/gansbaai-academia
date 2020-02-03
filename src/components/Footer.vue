@@ -61,8 +61,10 @@ export default {
       ],
       quickLinksItems: [
         { title:'Pledges', route:'/pledges' },
-        { title:'Extracurricular', route:'/extracurricular' },
-        { title:'Sponsorships', route:'/sponsorships' }
+        { title:'Sponsorships', route:'/sponsorships' },
+        { title:'Sports', route:'/sports' },
+        { title:'Arts & Culture', route:'/artsandculture' },
+        { title:'Societies', route:'/societies' },
       ],
       contactItems: [
         { title:'Sign Up', route:'/newsletter' },

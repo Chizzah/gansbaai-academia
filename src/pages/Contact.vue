@@ -2,7 +2,7 @@
   <layout>
     <section class="flex flex-col lg:flex-row justify-around items-center lg:items-start text-gray-900 lg:text-xl">
       <section class="mt-8 mx-4 lg:flex flex-col justify-center items-start lg:mt-16 lg:ml-40">
-        <h1 class="mb-4 text-xl lg:mb-8 lg:text-4xl">Contact <span class="text-red-900">Gansbaai Academia</span></h1>
+        <h1 class="mb-4 text-2xl font-semibold lg:mb-8 lg:text-4xl">Contact <span class="text-red-900">Gansbaai Academia</span></h1>
         <address class="flex flex-col justify-center items-start">
           <div class="mb-4">
             <strong>Address:</strong> <span class="ml-3">Kampeer St, Gansbaai, 7220</span>
@@ -18,10 +18,10 @@
           </div>
         </address>
         <contactForm class="mt-16 lg:mt-0" />
-      </section>
-      <section class="mt-8 p-4 bg-gray-900 flex flex-col justify-center items-center rounded lg:mt-10 lg:w-128 lg:mr-16">
-        <h2 class="mb-4 text-yellow-600 text-xl lg:mt-2 lg:mb-8 lg:text-4xl">Gansbaai Academia Maps</h2>
-        <a href="https://www.google.com/maps/place/Gansbaai+Academia/@-34.5950826,19.3498061,17z/data=!3m1!4b1!4m5!3m4!1s0x1dce10c84eb8878b:0xd9881d89f40c379a!8m2!3d-34.5950826!4d19.3519948" target="_blank"><g-image class="border border-solid border-gray-900" src="../../static/img/gansbaai-academia-contact-map.webp" alt="Google Maps of Gansbaai Academia High School" /></a>
+        <section class="mt-8 p-4 bg-gray-900 flex flex-col justify-center items-center rounded lg:mt-10 lg:w-128 lg:mr-16">
+          <h2 class="mb-4 text-yellow-600 text-xl lg:mt-2 lg:mb-8 lg:text-4xl">Gansbaai Academia Maps</h2>
+          <a href="https://www.google.com/maps/place/Gansbaai+Academia/@-34.5950826,19.3498061,17z/data=!3m1!4b1!4m5!3m4!1s0x1dce10c84eb8878b:0xd9881d89f40c379a!8m2!3d-34.5950826!4d19.3519948" target="_blank"><g-image class="border border-solid border-gray-900" src="../../static/img/gansbaai-academia-contact-map.webp" alt="Google Maps of Gansbaai Academia High School" /></a>
+        </section>
       </section>
     </section>
   </layout>
