@@ -54,7 +54,7 @@
           </div>
         </button>
         <div :class="isOpen2 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
-          <p class="ml-2 lg:ml-4">Lorem ipsum dolor, sit amet consectetur <br class="lg:hidden"> adipisicing <br class="hidden lg:block"> elit. Nisi iure dolorem saepe <br class="lg:hidden"> corrupti accusamus <br class="hidden lg:block"> nostrum ad! Illo suscipit <br class="lg:hidden"> architecto optio, blanditiis, <br class="hidden lg:block"> ullam voluptas quos <br class="lg:hidden"> praesentiumquia consequatur <br class="hidden lg:block"> voluptatibus <br class="lg:hidden"> corporis eum? <g-link to="/about"><strong>Read more...</strong></g-link></p>
+          <p class="ml-2 lg:ml-4">Lorem ipsum dolor, sit amet consectetur <br class="lg:hidden"> adipisicing <br class="hidden lg:block"> elit. Nisi iure dolorem saepe <br class="lg:hidden"> corrupti accusamus <br class="hidden lg:block"> nostrum ad! Illo suscipit <br class="lg:hidden"> architecto optio, blanditiis, <br class="hidden lg:block"> ullam voluptas quos <br class="lg:hidden"> praesentiumquia consequatur <br class="hidden lg:block"> voluptatibus <br class="lg:hidden"> corporis eum? <g-link to="/about"><strong class="ml-1 text-blue-500 hover:text-blue-300">Read more...</strong></g-link></p>
         </div>
       </section>
       <section class="mt-10 py-10 bg-red-900 w-full lg:flex justify-center items-center lg:mt-20 lg:py-20">
