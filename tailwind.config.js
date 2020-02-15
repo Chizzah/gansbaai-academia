@@ -21,6 +21,7 @@ module.exports = {
         '72': '18rem',
         '96': '24rem',
         '128': '32rem',
+        '156': '40rem',
         '256': '64rem',
       },
       fontSize: {

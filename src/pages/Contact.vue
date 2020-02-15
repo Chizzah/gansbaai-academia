@@ -1,24 +1,29 @@
 <template>
   <layout>
     <section class="lg:text-2xl">
-      <section class="flex flex-col lg:flex-row justify-around items-center lg:items-start text-gray-900 lg:text-xl">
-        <section class="mt-8 mx-4 lg:flex flex-col justify-center items-start lg:mt-20 lg:ml-40">
-          <h1 class="mb-4 text-2xl font-semibold lg:mb-16 lg:text-5xl">Contact <span class="text-red-900">Gansbaai Academia</span></h1>
-          <address class="flex flex-col justify-center items-start">
-            <div class="mb-4">
-              <strong>Address:</strong> <span class="ml-3">Kampeer St, Gansbaai, 7220</span>
-            </div>
-            <div class="mb-4 flex justify-start items-start">
-              <strong>Hours:</strong>
-              <div class="ml-6">
-                Monday: 8am-2:15pm <br> Tuesday: 8am-2:15pm <br> Wednesday: 8am-2:15pm <br> Thursday: 8am-2:15pm <br> Friday: 8am-2:15pm <br>Saturday: Closed <br> Sunday: Closed
-              </div>
+          <h1 class="mb-4 text-2xl text-center font-semibold lg:mb-16 lg:text-5xl">Contact <span class="text-red-900">Gansbaai Academia</span></h1>
+          <section class="flex flex-col lg:flex-row justify-around items-center">
+            <div>
+              <address class="mt-10 flex flex-col justify-center items-start">
+                <div class="mb-4">
+                  <strong>Address:</strong> <span class="ml-3">Kampeer St, Gansbaai, 7220</span>
+                </div>
+                <div class="mb-4 flex justify-start items-start">
+                  <strong>Hours:</strong>
+                  <div class="ml-6">
+                    Monday: 8am-2:15pm <br> Tuesday: 8am-2:15pm <br> Wednesday: 8am-2:15pm <br> Thursday: 8am-2:15pm <br> Friday: 8am-2:15pm <br>Saturday: Closed <br> Sunday: Closed
+                  </div>
+                </div>
+                <div>
+                  <strong>Phone:</strong> <span class="ml-5">028 384 2370</span>
+                </div>
+              </address>
             </div>
             <div>
-              <strong>Phone:</strong> <span class="ml-5">028 384 2370</span>
+              <contactForm class="mt-16 lg:mt-0" />
             </div>
-          </address>
-          <contactForm class="mt-16 lg:mt-0" />
+          </section>
+        <section class="mt-8 mx-4 lg:flex flex justify-center items-center lg:mt-20 lg:ml-40">
         </section>
       </section>
       <section class="mt-8 p-4 max-w-full mx-auto bg-gray-900 flex flex-col justify-center items-center lg:mt-16 lg:py-20">

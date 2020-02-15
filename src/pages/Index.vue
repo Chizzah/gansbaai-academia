@@ -3,7 +3,7 @@
     <section class="text-gray-900 lg:text-xl">
       <section>
         <div class="relative bg-black">
-          <g-image class="w-full h-full opacity-75" src="../../static/img/home-hero.webp" alt="Gansbaai Academia school building in Gansbaai, Overberg" height="480" />
+          <g-image class="w-full h-156" src="../../static/img/home-hero.webp" alt="Gansbaai Academia school building in Gansbaai, Overberg" />
           <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start text-gray-100 lg:mt-40">
             <div class="mt-12 py-10 px-24 bg-red-900 opacity-75 lg:py-20 lg:px-72">
             </div>
