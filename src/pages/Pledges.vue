@@ -49,7 +49,7 @@
           <button @click="isOpen = !isOpen" type="button" class="w-72 mt-8 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128 lg:mt-16">
             <h4 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">My Pledge to be a Sharky</h4>
             <div class="bg-red-900 rounded-r-lg">
-              <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+              <g-image class="w-12 h-16" src="../../static/icons/cheveron-right.svg" alt="Cheveron pointing right." /> 
             </div>
           </button>
           <div :class="isOpen ? 'block' : 'hidden'" class="flex flex-col items-start justify-start w-full text-xs font-semibold lg:mt-8 lg:text-sm">

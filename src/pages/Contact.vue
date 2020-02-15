@@ -1,7 +1,7 @@
 <template>
   <layout>
     <section class="lg:text-2xl">
-          <h1 class="mb-4 text-2xl text-center font-semibold lg:mb-16 lg:text-5xl">Contact <span class="text-red-900">Gansbaai Academia</span></h1>
+          <h1 class="mt-10 mb-4 text-2xl text-center font-semibold lg:mb-16 lg:text-5xl">Contact <span class="text-red-900">Gansbaai Academia</span></h1>
           <section class="flex flex-col lg:flex-row justify-around items-center">
             <div>
               <address class="mt-10 flex flex-col justify-center items-start">
@@ -43,7 +43,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

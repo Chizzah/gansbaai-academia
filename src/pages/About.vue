@@ -34,7 +34,7 @@
           <button @click="isOpen1 = !isOpen1" type="button" class="w-72 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128">
             <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Core Subjects</h2>
             <div class="bg-red-900 rounded-r-lg">
-              <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+              <g-image class="w-12 h-16" src="../../static/icons/cheveron-right.svg" alt="First cheveron pointing right." /> 
             </div>
           </button>
           <div :class="isOpen1 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
@@ -48,7 +48,7 @@
           <button @click="isOpen2 = !isOpen2" type="button" class="w-72 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128">
             <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Other Subjects</h2>
             <div class="bg-red-900 rounded-r-lg">
-              <g-image class="h-16" src="../../static/icons/cheveron-right.svg" /> 
+              <g-image class="w-12 h-16" src="../../static/icons/cheveron-right.svg" alt="Second cheveron pointing right." /> 
             </div>
           </button>
           <div :class="isOpen2 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">

@@ -3,7 +3,7 @@
     <section class="text-gray-900 lg:text-xl">
       <section>
         <div class="relative bg-black">
-          <g-image class="w-full h-156" src="../../static/img/home-hero.webp" alt="Gansbaai Academia school building in Gansbaai, Overberg" />
+          <g-image class="w-full h-40 lg:h-156" src="../../static/img/home-hero.webp" alt="Gansbaai Academia school building in Gansbaai, Overberg" />
           <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start text-gray-100 lg:mt-40">
             <div class="mt-12 py-10 px-24 bg-red-900 opacity-75 lg:py-20 lg:px-72">
             </div>
@@ -37,7 +37,7 @@
         <button @click="isOpen1 = !isOpen1" type="button" class="w-72 mt-6 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128 lg:mt-12">
           <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Core Aims</h2>
           <div class="bg-red-900 rounded-r-lg">
-            <g-image class="h-16" src="../../static/icons/cheveron-right.svg" alt="First cheveron pointing right." /> 
+            <g-image class="w-12 h-16" src="../../static/icons/cheveron-right.svg" alt="First cheveron pointing right." /> 
           </div>
         </button>
         <div :class="isOpen1 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
@@ -50,7 +50,7 @@
         <button @click="isOpen2 = !isOpen2" type="button" class="w-72 mt-4 flex justify-between items-center bg-gray-900 rounded-lg focus:outline-none lg:w-128">
           <h2 class="ml-2 text-yellow-600 text-lg lg:ml-4 lg:text-2xl">Our History</h2>
           <div class="bg-red-900 rounded-r-lg">
-            <g-image class="h-16" src="../../static/icons/cheveron-right.svg" alt="Second cheveron pointing right." /> 
+            <g-image class="w-12 h-16" src="../../static/icons/cheveron-right.svg" alt="Second cheveron pointing right." /> 
           </div>
         </button>
         <div :class="isOpen2 ? 'block' : 'hidden'" class="mt-4 flex flex-col items-start justify-start w-full text-xs font-semibold lg:text-sm">
