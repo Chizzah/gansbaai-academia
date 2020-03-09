@@ -2,12 +2,11 @@
   <header class="py-4 text-gray-900">
     <nav class="flex justify-around items-center lg:text-xl">
       <section class="uppercase">
-        <g-link to="/"><h5 class="text-red-900 text-xl font-bold lg:text-3xl">Gansbaai Academia</h5>
-        <p class="text-yellow-600 text-sm font-semibold lg:text-lg">High School</p></g-link>
+        <g-link to="/"><h5 class="text-red-900 text-xl font-bold lg:text-3xl">Gansbaai Academia</h5></g-link>
       </section>
-      <section class="hidden font-bold text-2xl lg:flex">
+      <section class="hidden font-bold text-xl lg:flex">
         <ul v-for="menuItem in menuItems" :key="menuItem.title">
-          <li class="px-2">
+          <li class="px-4">
             <g-link class="hover:text-red-900" :to="menuItem.route">{{ menuItem.title }}</g-link>
           </li>
         </ul>
@@ -18,11 +17,11 @@
         </button>
       </section>
     </nav>
-    <nav :class="isOpen ? 'block' : 'hidden'" class="z-50 flex flex-col items-center justify-center block w-full py-4 text-sm font-semibold uppercase lg:p-0">
+    <nav :class="isOpen ? 'block' : 'hidden'" class="mt-8 bg-gray-900 text-gray-100 z-50 flex flex-col items-center justify-center block w-full py-4 text-sm font-semibold uppercase lg:p-0">
       <section class="mb-2 ml-8">
         <ul class="rounded list-reset lg:hidden" v-for="menuItem in menuItems" :key="menuItem.title">
           <li class="py-2">
-            <g-link class="text-gray-900 hover:text-rosegold" :to="menuItem.route">{{ menuItem.title }}</g-link>
+            <g-link class="hover:text-red-900" :to="menuItem.route">{{ menuItem.title }}</g-link>
           </li>
         </ul>
       </section>
@@ -37,8 +36,7 @@ export default {
       menuItems: [
         { title:'Home', route:'/' },
         { title:'About', route:'/about' },
-        { title:'News', route:'/news' },
-        { title:'Events', route:'/events' },
+        { title:'Admissions', route:'/admissions' },
         { title:'Calendar', route:'/calendar' },
         { title:'Contact', route:'/contact' }
       ],

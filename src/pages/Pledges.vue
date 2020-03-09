@@ -110,9 +110,6 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Pledges'
-  },
   data() {
     return {
       isOpen: false,

@@ -1,4 +1,7 @@
 User-agent: *
-Disallow: 
+Disallow: /privacypolicy/
+Disallow: /success/
+Noindex: /privacypolicy/
+Noindex: /success/
 Disallow: /cgi-bin/
 Sitemap: https://www.gansbaai-academia.co.za/sitemap.xml

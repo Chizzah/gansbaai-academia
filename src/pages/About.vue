@@ -9,8 +9,8 @@
             </div>
           </div>
           <div class="mt-6 ml-4 absolute top-0 left-0 h-full flex flex-col justify-center items-start text-gray-100 lg:mt-40 lg:ml-8">
-            <h1 class="mb-2 text-xs font-semibold uppercase lg:mt-12 lg:text-4xl">Gansbaai Academia</h1>
-            <p class="text-xxs lg:text-xl">"Start where you are. Use what you have. <br class="lg:hidden"> Do what you can." <br> <strong>- Arthur Ashe</strong></p>
+            <h1 class="mb-2 text-xs font-semibold uppercase lg:mt-12 lg:text-4xl">Multicutural High School</h1>
+            <p class="text-xxs lg:text-xl">"Education is the passport to the future, for <br class="lg:hidden"> tomorrow <br class="hidden lg:block"> belongs to those who prepare for <br class="lg:hidden"> it today." <br> <strong>- Malcolm X</strong></p>
           </div>
         </div>
       </section>
@@ -65,7 +65,7 @@
           <p class="mb-2 lg:mb-4">We have adopted the shark as our mascot and our sports teams are <br class="hidden lg:block"> named the Sharkies. This is because Gansbaai, the town where we are <br class="hidden lg:block"> situated, is home to the big two of the oceans, the great white shark and <br class="hidden lg:block"> the southern right whale and offers unquestionably the world’s best <br class="hidden lg:block"> white-shark diving</p>
         </div>
         <div>
-          <g-image class="mt-8 rounded-lg lg:mt-16 lg:mr-64 lg:rounded" src="../../static/img/about-mascot.webp" alt="Students of Gansbaai Academia celebrating graduation." />
+          <g-image class="mt-8 rounded-lg lg:mt-16 lg:mr-64 lg:rounded" src="../../static/img/gansbaai-academia-school-mascot.webp" alt="Students of Gansbaai Academia celebrating graduation." />
         </div>
       </section>
     </section>
@@ -74,14 +74,20 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'About us'
-  },
   data() {
     return {
       isOpen1: false,
       isOpen2: false,
     }
+  },
+  metaInfo: {
+    title: 'Multicutural High School',
+    meta: [
+      {
+        name: 'description',
+        content: "Gansbaai Academia is a no fees, multi-cultural school situated in Gansbaai. The school officially opened its doors on 22 February, 2010."
+      }
+    ]
   }
 }
 </script>

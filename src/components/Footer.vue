@@ -45,7 +45,7 @@
         </div>
       </section>
     </section>
-    <section class="ml-10 flex block text-lg lg:hidden">
+    <section class="ml-12 flex block text-lg lg:hidden">
         <div>
           <h3 class="text-yellow-700 font-semibold">Get in touch</h3>
         <ul class="text-gray-100 rounded list-reset" v-for="contactItem in contactItems" :key="contactItem.title">
@@ -55,7 +55,7 @@
         </ul>
         </div>
         <div class="ml-16 flex justify-center items-center">
-          <a href="https://www.facebook.com/GansbaaiAcademia/" target="_blank">
+          <a href="https://www.facebook.com/GansbaaiAcademia/" target="_blank" >
             <svg class="text-blue-800 fill-current" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
           </a>
           <a href="#" target="_blank">
@@ -80,17 +80,14 @@ export default {
       navItems: [
         { title:'Home', route:'/' },
         { title:'About', route:'/about' },
-        { title:'News', route:'/news' },
-        { title:'Events', route:'/events' },
+        { title:'Admissions', route:'/admissions' },
         { title:'Calendar', route:'/calendar' },
-        { title:'Privacy', route:'/privacypolicy' },
+        { title:'Privacy', route:'/privacypolicy' }
       ],
       quickLinksItems: [
-        { title:'Pledges', route:'/pledges' },
-        { title:'Sponsorships', route:'/sponsorships' },
-        { title:'Sports', route:'/sports' },
-        { title:'Arts & Culture', route:'/artsandculture' },
-        { title:'Societies', route:'/societies' },
+        { title:'News', route:'/news' },
+        { title:'Events', route:'/events' },
+        { title:'Pledges', route:'/pledges' }
       ],
       contactItems: [
         { title:'Sign Up', route:'/newsletter' },
