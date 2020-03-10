@@ -4,7 +4,7 @@
       <h4 class="pt-16 mx-8 mb-4 text-xs text-yellow-600 font-semibold uppercase lg:text-lg">Achieve, Ascend & Transend.</h4>
       <h2 class="mx-8 mb-6 text-red-800 text-lg lg:text-3xl">"He who opens a school door, closes a prison" <br> <strong>- Victor Hugo</strong></h2>
       <h3 class="mx-8 mr-6 text-sm text-gray-100 lg:text-xl">Gansbaai Academia is a no fees, multi-cultural school situated in Gansbaai. It serves all communities and most of the school’s current complement of 725 learners originate from the three main population groups (black, coloured and white) in Gansbaai and Stanford and their surrounding areas.</h3>
-      <g-link to="/cakesinoudtshoorn"><button class="ml-8 my-8 py-4 px-8 text-sm text-gray-100 bg-red-900 font-semibold rounded-full uppercase hover:bg-red-800 focus:outline-none">Newsletter Sign Up</button></g-link>
+      <g-link to="/newsletter"><button class="ml-8 my-8 py-4 px-8 text-sm text-gray-100 bg-red-900 font-semibold rounded-full uppercase hover:bg-red-800 focus:outline-none">Newsletter Sign Up</button></g-link>
     </section>
     <section class="flex flex-row items-start justify-around mb-8 text-lg text-left lg:w-full lg:text-lg">
       <section class="my-16 lg:ml-12">
