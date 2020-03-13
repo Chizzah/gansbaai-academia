@@ -81,8 +81,8 @@
 
       <!-- Video Section -->
 
-      <section id="iframe-container" class="relative mt-10 lg:mt-20">>
-          <iframe src="https://www.youtube.com/embed/4c5XyPTmTcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <section class="my-16 py-10 bg-red-900 flex justify-center items-center lg:mt-32 lg:py-20">
+        <LazyYoutubeVideo class="w-9/12 lg:w-6/12" src="https://www.youtube.com/embed/4c5XyPTmTcA" />
       </section>
 
       <!-- Extracurricular Section -->
@@ -171,12 +171,18 @@
 </page-query>
 
 <script>
+import 'vue-lazy-youtube-video/dist/style.css';
+import LazyYoutubeVideo from 'vue-lazy-youtube-video';
+
 export default {
   data() {
     return {
       isOpen1: false,
       isOpen2: false,
     }
+  },
+  components: {
+    LazyYoutubeVideo,
   },
   metaInfo: {
     title: 'Best High School in Gansbaai',
@@ -189,20 +195,3 @@ export default {
   }
 }
 </script>
-
-<style lang="postcss" scoped>
-  #iframe-container {
-    overflow: hidden;
-    padding-top: 40% ;
-    position: relative;
-  }
-
-  #iframe-container iframe {
-    border: 0;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-</style>
