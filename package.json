@@ -12,7 +12,8 @@
     "dotenv": "^8.2.0",
     "gridsome": "^0.7.0",
     "vue-lazy-youtube-video": "^2.0.0-beta.0",
-    "vue-simple-markdown": "^1.1.1"
+    "vue-simple-markdown": "^1.1.1",
+    "vue-tiny-lazyload-img": "^0.1.0"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.32"
