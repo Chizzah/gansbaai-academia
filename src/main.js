@@ -8,9 +8,7 @@ import 'vue-simple-markdown/dist/vue-simple-markdown.css'
 // Lazy Load Youtube Video
 
 import Vue from 'vue'
-import { Plugin } from 'vue-lazy-youtube-video'
-
-Vue.use(Plugin)
+import LazyYoutubeVideo from 'vue-lazy-youtube-video'
 
 Vue.component('LazyYoutubeVideo', LazyYoutubeVideo)
 
