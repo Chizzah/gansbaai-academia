@@ -1,13 +1,15 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
+// Site Layout
 import DefaultLayout from '~/layouts/Default.vue'
+
+// Markdown Parser
 import VueSimpleMarkdown from 'vue-simple-markdown'
 import 'vue-simple-markdown/dist/vue-simple-markdown.css'
+
+// Lazy Load Youtube Video
+
 import Vue from 'vue'
 import LazyYoutubeVideo from 'vue-lazy-youtube-video'
-import VueTinyLazyloadImg from 'vue-tiny-lazyload-img'
-Vue.use(VueTinyLazyloadImg);
+import 'vue-lazy-youtube-video/dist/style.css'
 
 Vue.component('LazyYoutubeVideo', LazyYoutubeVideo)
 

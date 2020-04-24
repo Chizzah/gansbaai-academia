@@ -129,7 +129,7 @@
         <section class="flex flex-col lg:flex-row justify-center items-center lg:py-24">
           <section class="flex flex-col justify-center items-start lg:mx-6" v-for="edge in $page.articles.edges" :key="edge.node.id">
             <div>
-              <img class="rounded" v-lazyload :src="`${edge.node.image.file.url}?w=400`" :alt="edge.node.image.description" />
+              <img class="rounded" :src="`${edge.node.image.file.url}?w=400`" :alt="edge.node.image.description" />
             </div>
             <div class="mt-4 mb-8 ml-2 lg:w-3/6">
               <h3 class="text-red-900 text-xl font-semibold lg:text-lg">{{ edge.node.title }}</h3>

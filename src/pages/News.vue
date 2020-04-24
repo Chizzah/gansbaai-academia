@@ -5,8 +5,8 @@
 			<section class="flex flex-col justify-start items-start">
 				<section class="flex flex-col justify-start items-center lg:mt-20 lg:flex-row" v-for="edge in $page.articles.edges" :key="edge.node.id">
 					<div>
-						<g-image class="hidden rounded lg:block" :src="`${edge.node.image.file.url}?w=400`" :alt="edge.node.image.description" />
-						<g-image class="rounded lg:hidden" :src="`${edge.node.image.file.url}?w=300`" :alt="edge.node.image.description" />
+						<img class="hidden rounded lg:block" :src="`${edge.node.image.file.url}?w=400`" :alt="edge.node.image.description" />
+						<img class="rounded lg:hidden" :src="`${edge.node.image.file.url}?w=300`" :alt="edge.node.image.description" />
 					</div>
 					<div class="m-12 lg:w-3/6 lg:m-0 lg:ml-16">
 						<h2 class="text-red-900 font-semibold lg:text-2xl">{{ edge.node.title }}</h2>
