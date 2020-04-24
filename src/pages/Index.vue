@@ -82,7 +82,7 @@
       <!-- Video Section -->
 
       <section class="my-16 py-10 bg-red-900 flex justify-center items-center lg:mt-32 lg:py-20">
-        <LazyYoutubeVideo class="w-9/12 lg:w-6/12" src="https://www.youtube.com/embed/4c5XyPTmTcA" />
+        <LazyYoutubeVideo class="w-9/12 lg:w-6/12" url="https://www.youtube.com/embed/4c5XyPTmTcA" />
       </section>
 
       <!-- Extracurricular Section -->
