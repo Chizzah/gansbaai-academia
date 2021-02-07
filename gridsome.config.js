@@ -5,8 +5,17 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 require("dotenv").config();
+const tailwindcss = require("tailwindcss");
 
 module.exports = {
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [tailwindcss],
+      },
+    },
+  },
+
   siteName: "Gansbaai Academia",
   siteUrl: "https://www.gansbaai-academia.co.za",
   plugins: [
@@ -20,6 +29,14 @@ module.exports = {
     },
     {
       use: "gridsome-plugin-tailwindcss",
+
+      // these options are optional, as they are copies of the default values...
+      options: {
+        tailwindConfig: "./tailwind.config.js",
+        presetEnvConfig: {},
+        shouldImport: false,
+        shouldTimeTravel: false,
+      },
     },
     {
       use: "@gridsome/source-contentful",
