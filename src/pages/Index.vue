@@ -349,10 +349,6 @@
   </Layout>
 </template>
 
-<page-query>
-
-</page-query>
-
 <script>
 import "vue-lazy-youtube-video/dist/style.css";
 import LazyYoutubeVideo from "vue-lazy-youtube-video";

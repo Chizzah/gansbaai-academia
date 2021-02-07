@@ -44,7 +44,7 @@
     </nav>
     <nav
       :class="isOpen ? 'block' : 'hidden'"
-      class="z-50 flex flex-col items-center justify-center block w-full py-4 mt-8 text-sm font-semibold text-gray-100 uppercase bg-gray-900 lg:p-0"
+      class="z-50 flex flex-col items-center justify-center w-full py-4 mt-8 text-sm font-semibold text-gray-100 uppercase bg-gray-900 lg:p-0"
     >
       <section class="mb-2 ml-8">
         <ul
