@@ -2,7 +2,7 @@
   <section
     class="flex flex-col items-center justify-center h-screen text-center"
   >
-    <h1 class="font-semibold text-gray-900 lg:text-4xl">
+    <h1 class="font-semibold lg:text-4xl">
       Sorry, this page is still under construction.
     </h1>
     <g-image
