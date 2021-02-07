@@ -1,4 +1,6 @@
 module.exports = {
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
       sm: "640px",
@@ -32,4 +34,8 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 };
