@@ -5,17 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 require("dotenv").config();
-const tailwindcss = require("tailwindcss");
+const tailwind = require("tailwindcss");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: [tailwindcss],
-      },
-    },
-  },
-
   siteName: "Gansbaai Academia",
   siteUrl: "https://www.gansbaai-academia.co.za",
   plugins: [
@@ -52,5 +45,12 @@ module.exports = {
   templates: {
     // ContentfulArticle: '/articles/:slug'
     ContentfulLifeScience: "/lifescience/:title",
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [tailwind, autoprefixer],
+      },
+    },
   },
 };
