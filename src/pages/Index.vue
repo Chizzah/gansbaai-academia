@@ -6,19 +6,19 @@
       <section>
         <div class="relative bg-black">
           <g-image
-            class="w-full h-40 opacity-75 lg:h-156"
+            class="w-full opacity-75 hero"
             src="../../static/img/gansbaai-academia-building.webp"
             alt="Gansbaai Academia school building in Gansbaai, Overberg"
           />
           <div
-            class="absolute top-0 left-0 flex flex-col items-start justify-center w-full h-full text-gray-100 lg:mt-40"
+            class="absolute top-0 left-0 flex flex-col items-start justify-center w-full h-full text-gray-100 lg:mt-56"
           >
             <div
               class="px-24 py-10 mt-12 bg-red-900 opacity-75 lg:py-20 lg:px-72"
             ></div>
           </div>
           <div
-            class="absolute top-0 left-0 flex flex-col items-start justify-center h-full mt-6 ml-4 text-gray-100 lg:mt-40 lg:ml-8"
+            class="absolute top-0 left-0 flex flex-col items-start justify-center h-full mt-6 ml-4 text-gray-100 lg:mt-56 lg:ml-8"
           >
             <h1
               class="mb-2 text-xs font-semibold uppercase lg:mt-12 lg:text-3xl"
@@ -36,14 +36,18 @@
 
       <!-- Our Vision/Headmaster's Welcome Section -->
 
-      <section
-        class="items-center justify-between mx-4 mt-8 lg:flex lg:mt-16 lg:ml-40"
-      >
-        <div>
-          <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">
-            Our <span class="text-red-900">Vision</span>
-          </h2>
-          <p>
+      <section v-for="edge in $page.home.edges" :key="edge.node.id">
+        <section
+          class="items-center justify-between mx-4 mt-8 lg:flex lg:mt-16 lg:ml-40"
+        >
+          <div>
+            <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">
+              Our <span class="text-red-900">Vision</span>
+            </h2>
+            <vue-simple-markdown
+              :source="edge.node.ourVision"
+            ></vue-simple-markdown>
+            <!-- <p>
             To be an excellent comprehensive community school, with a
             <br class="hidden lg:block" />
             strong emphasis in the area of Hospitality, CAT, Tourism and
@@ -53,24 +57,29 @@
             ensure all students are inspired, and empowered, to achieve
             <br class="hidden lg:block" />
             their full potential.
-          </p>
-        </div>
-        <div>
-          <g-image
-            class="mt-8 rounded-lg lg:mt-16 lg:mr-40 lg:rounded"
-            src="../../static/img/gansbaai-academia-library.webp"
-            alt="Students of Gansbaai Academia in the school library."
-          />
-        </div>
-      </section>
-      <section
-        class="items-center justify-between mx-4 mt-8 lg:flex lg:mt-16 lg:ml-40"
-      >
-        <div>
-          <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">
-            Headmaster's <span class="text-red-900">Welcome</span>
-          </h2>
-          <p class="mb-2 lg:mb-4">
+          </p> -->
+          </div>
+          <div>
+            <g-image
+              class="mt-8 rounded-lg lg:mt-16 lg:mr-40 lg:rounded"
+              :src="edge.node.ourVisionImage.file.url"
+              :alt="edge.node.ourVisionImage.title"
+            />
+          </div>
+        </section>
+        <section
+          v-for="edge in $page.home.edges"
+          :key="edge.node.id"
+          class="items-center justify-between mx-4 mt-8 lg:flex lg:mt-16 lg:ml-40"
+        >
+          <div>
+            <h2 class="mb-4 text-2xl lg:mb-8 lg:text-6xl">
+              Headmaster's <span class="text-red-900">Welcome</span>
+            </h2>
+            <vue-simple-markdown
+              :source="edge.node.headmastersWelcome"
+            ></vue-simple-markdown>
+            <!-- <p class="mb-2 lg:mb-4">
             Welcome to our website, which has been purposely designed to give
             you an insight <br class="hidden lg:block" />
             into our community, as we believe that Gansbaai Academia's not just
@@ -126,16 +135,17 @@
             responsibility, fairness, caring and citizenship. Gansbaai is a
             small fishing coastal town in the <br class="hidden lg:block" />
             Overstrand region of the Western Cape province
-          </p>
-        </div>
-        <div class="flex items-center justify-center">
-          <g-image
-            class="mt-8 rounded-lg lg:mt-16 lg:mr-32"
-            src="../../static/img/gansbaai-academia-headmaster.webp"
-            alt="Mr Tommy Wilson, Gansbaai Academia's headmaster."
-            width="300"
-          />
-        </div>
+          </p> -->
+          </div>
+          <div class="flex items-center justify-center">
+            <g-image
+              class="mt-8 rounded-lg lg:mt-16 lg:mr-32"
+              :src="edge.node.headmastersWelcomeImage.file.url"
+              :alt="edge.node.headmastersWelcomeImage.title"
+              width="300"
+            />
+          </div>
+        </section>
       </section>
       <section
         class="items-start justify-center mx-4 mt-8 lg:flex lg:flex-col lg:mt-16 lg:ml-40"
@@ -314,40 +324,88 @@
 
       <!-- News Section -->
 
-      <!--<section>
-        <h2 class="mx-4 my-8 text-2xl lg:mb-8 lg:text-6xl lg:mt-16 lg:ml-40">Latest <span class="text-red-900">News</span></h2>
-        <section class="flex flex-col items-center justify-center lg:flex-row lg:py-24">
-          <section class="flex flex-col items-start justify-center lg:mx-6" v-for="edge in $page.articles.edges" :key="edge.node.id">
+      <section>
+        <h2 class="mx-4 my-8 text-2xl lg:mb-8 lg:text-6xl lg:mt-16 lg:ml-40">
+          Latest <span class="text-red-900">News</span>
+        </h2>
+        <section
+          class="flex flex-col items-center justify-center lg:flex-row lg:py-24"
+        >
+          <section
+            class="flex flex-col items-start justify-center lg:mx-6"
+            v-for="edge in $page.news.edges"
+            :key="edge.node.id"
+          >
             <div>
-              <img class="rounded" :src="`${edge.node.image.file.url}?w=400`" :alt="edge.node.image.description" />
+              <img
+                class="rounded"
+                :src="`${edge.node.image.file.url}?w=400`"
+                :alt="edge.node.image.description"
+              />
             </div>
             <div class="mt-4 mb-8 ml-2 lg:w-3/6">
-              <h3 class="text-xl font-semibold text-red-900 lg:text-lg">{{ edge.node.title }}</h3>
+              <h3 class="text-xl font-semibold text-red-900 lg:text-lg">
+                {{ edge.node.title }}
+              </h3>
               <p class="mb-4 lg:text-sm">by {{ edge.node.author.name }}</p>
-              <g-link class="text-lg font-semibold text-yellow-700" :to="edge.node.path">Read more</g-link>
+              <g-link
+                class="text-lg font-semibold text-yellow-700"
+                :to="`/news/${edge.node.slug}`"
+                >Read more</g-link
+              >
             </div>
           </section>
         </section>
-      </section>-->
-
-      <!--<section>
-        <h2 class="mx-4 my-8 text-2xl lg:mb-8 lg:text-6xl lg:mt-16 lg:ml-40">Latest <span class="text-red-900">News</span></h2>
-        <section class="flex flex-col items-center justify-center lg:flex-row lg:py-24">
-          <section class="flex flex-col items-start justify-center lg:mx-6" v-for="edge in $page.articles.edges" :key="edge.node.id">
-            <div>
-              <img class="rounded" :src="`${edge.node.image.file.url}?w=400`" :alt="edge.node.image.description" />
-            </div>
-            <div class="mt-4 mb-8 ml-2 lg:w-3/6">
-              <h3 class="text-xl font-semibold text-red-900 lg:text-lg">{{ edge.node.title }}</h3>
-              <p class="mb-4 lg:text-sm">by {{ edge.node.author.name }}</p>
-              <g-link class="text-lg font-semibold text-yellow-700" :to="edge.node.path">Read more</g-link>
-            </div>
-          </section>
-        </section>
-      </section>-->
+      </section>
     </section>
   </Layout>
 </template>
+
+<page-query>
+query {
+  home: allContentfulHomePage {
+    edges {
+      node {
+        id
+        title
+        ourVision
+        ourVisionImage {
+          title
+          file {
+            url
+          }
+        }
+        headmastersWelcome
+        headmastersWelcomeImage {
+          title
+          file {
+            url
+          }
+        }
+      }
+    }
+  }
+  news: allContentfulNews {
+    edges {
+      node {
+        id
+        slug
+        title
+        author {
+          name
+        }
+        summary
+        image {
+          title
+          file {
+            url
+          }
+        }
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import "vue-lazy-youtube-video/dist/style.css";

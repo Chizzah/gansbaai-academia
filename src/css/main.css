@@ -3,3 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@media (min-width: 1600px) {
+  .hero {
+    height: 90vh;
+  }
+}

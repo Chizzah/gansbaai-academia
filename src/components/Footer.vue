@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="text-gray-500 bg-gray-900 lg:rounded-lg lg:mb-16 lg:max-w-6xl lg:mx-auto"
+    class="text-gray-500 bg-gray-900 lg:container lg:rounded-lg lg:mb-16 lg:mx-auto"
   >
     <section
       class="mt-8 border-b border-solid border-rosegold sm:mx-12 lg:ml-24 lg:mt-16"

@@ -68,7 +68,6 @@ export default {
   data() {
     return {
       menuItems: [
-        { title: "Home", route: "/" },
         { title: "About", route: "/about" },
         { title: "Admissions", route: "/admissions" },
         { title: "Calendar", route: "/calendar" },
